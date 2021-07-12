@@ -1,0 +1,26 @@
+.container{
+    font-family: calibri;
+    max-width: 600px;
+    margin: auto;
+    
+}
+.heading{
+    color: rebeccapurple;
+}
+.navCont{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+
+}
+.navLinkText{
+    color: #000;
+
+}
+.navLinkText:hover{
+    color: rebeccapurple;
+}
+.navItem{
+    padding-right: 2em;
+
+}
