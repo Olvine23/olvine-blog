@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
   return (
-     <Layout pageTitle = "Home Page">
+     <Layout pageTitle = 'home'>
        <p>I am trying to make a blog and change the world</p>
 
        <StaticImage placeholder= "blurred" width ={900} height ={200} src = "../images/love.jpg" />

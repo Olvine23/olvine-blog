@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Link, useStaticQuery, graphql} from 'gatsby';
-import { container, heading,navLinkText, navItem, navCont,siteTitle} from './layout.module.css';
+import { container} from './layout.module.css';
+
  
 const Layout = ({pageTitle, children}) => {
 
@@ -15,16 +16,17 @@ const Layout = ({pageTitle, children}) => {
        }`)
     return(
         <main className = {container}>
-            <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-            <p className = {siteTitle}>{data.site.siteMetadata.title}</p>
+            {/* <title>{pageTitle} | {data.site.siteMetadata.title}</title> */}
+            <title>{pageTitle}</title>
+            <p >{data.site.siteMetadata.title}</p>
             <nav>
-                <ul className ={navCont}>
-                    <li className = {navItem}><Link className= {navLinkText} to ="/">Home</Link></li>
-                    <li className = {navItem }><Link className= {navLinkText} to ="/about">About</Link></li>
-                    <li className = {navItem }><Link className= {navLinkText} to ="/blog">Blog</Link></li>
+                <ul>
+                    <li><Link   to ="/">Home</Link></li>
+                    <li><Link  to ="/about">About</Link></li>
+                    <li><Link  to ="/blog">Blog</Link></li>
                 </ul>
             </nav>
-            <h1 className= {heading}>{pageTitle}</h1>
+            <h1>{pageTitle}</h1>
             {children}
         </main>
     )
