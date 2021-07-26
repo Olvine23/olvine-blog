@@ -1,8 +1,12 @@
+ 
 .container{
-    font-family: calibri;
+    font-family:calibri;
+    background-image:url('/src/images/fall.jpg');
     max-width: 600px;
     margin: auto;
-    
+}
+.span{
+    color:red;
 }
 .heading{
     color: rebeccapurple;
